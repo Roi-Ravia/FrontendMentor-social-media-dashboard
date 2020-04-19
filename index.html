@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- css stylesheet -->
+  <link id="sheetDark" rel="stylesheet" href="styles.css">
+
+  <!-- google-font -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:200,400,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+
+  <section class="Navigation-Bar">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-9 col-md-12" id="title">
+          <a>Social Media Dashboard</a>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="col-lg-3 col-md-12" id="title-button">
+          <div class="btn-group-toggle" data-toggle="buttons" id="darkMode">
+            <span class="button-text">Dark Mode</span>
+            <label class="btn">
+              <input type="checkbox" checked autocomplete="off" onclick="switchTheme('styleSheet')">
+              <div class="roundToggle">
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Data -->
+
+  <section class="main-section">
+    <div class="container">
+      <div class="row main-row">
+        <div class="col-lg-3 col-md-12 col-sm-12 main-data">
+          <div class="card" id="facebook-main">
+            <p class="username"> <img src="images/icon-facebook.svg" alt="Facebook"> @nathanf</p>
+            <h1>1987</h1>
+            <p class="followers">FOLLOWERS</p>
+            <p class="daily-users">12 Today</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12 main-data">
+          <div class="card" id="twitter-main">
+            <p class="username"> <img src="images/icon-twitter.svg" alt="Twitter"> @nathanf</p>
+            <h1>1044</h1>
+            <p class="followers">FOLLOWERS</p>
+            <p class="daily-users">99 Today</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 main-data">
+          <div class="instagram-card">
+            <div class="card" id="instagram-main">
+              <p class="username"><img src="images/icon-instagram.svg" alt="Instagram"> @nathanf</p>
+              <h1>11k</h1>
+              <p class="followers">FOLLOWERS</p>
+              <p class="daily-users">1099 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12 main-data">
+          <div class="card" id="youtube-main">
+            <p class="username"><img src="images/icon-youtube.svg" alt="youtube"> Nathan F.</p>
+            <h1>8239</h1>
+            <p class="followers">SUBSCRIBERS</p>
+            <p class="daily-users">-144 Today</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Data -->
+
+  <section class="overview-data">
+    <div class="container">
+      <h2 class="overview-data-title">Overview - Today</h2>
+      <div class="card-deck">
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Page Views</p>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>87</h2>
+              <p class="daily-users">3%</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Likes</p>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>52</h2>
+              <p class="daily-users">-2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Likes</p>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>5462</h2>
+              <p class="daily-users">2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>52k</h2>
+              <p class="daily-users">1375%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Retweets</p>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>117</h2>
+              <p class="daily-users">303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Likes</p>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>507</h2>
+              <p class="daily-users">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Likes</p>
+              <img src="images/icon-youtube.svg" alt="">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>107</h2>
+              <p class="daily-users">-19%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card overview-card">
+          <div class="card-header">
+            <div class="row overview-row">
+              <p>Total views</p>
+              <img src="images/icon-youtube.svg" alt="">
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row overview-row">
+              <h2>1407</h2>
+              <p class="daily-users">-12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="social-analytics.js"></script>
+</body>
+
+</html>
